@@ -1,0 +1,77 @@
+.dbs-icon-btn {
+  transition: background 120ms;
+}
+.dbs-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+.dbs-icon-btn:active {
+  background: rgba(255, 255, 255, 0.22) !important;
+}
+
+.dbs-tree-row {
+  transition: filter 120ms;
+  user-select: none;
+}
+.dbs-tree-row:hover {
+  filter: brightness(1.18);
+}
+
+.dbs-expand-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 2px;
+  transition: background 120ms;
+  cursor: pointer;
+}
+.dbs-expand-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.dbs-vert-tab {
+  transition: filter 120ms;
+  user-select: none;
+}
+.dbs-vert-tab:hover {
+  filter: brightness(1.22);
+}
+
+.dbs-action-item {
+  transition: background 120ms;
+  user-select: none;
+  cursor: pointer;
+}
+.dbs-action-item:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dbs-search-wrap {
+  transition: border-color 150ms;
+}
+.dbs-search-wrap:focus-within {
+  border-color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.dbs-search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #869fb8;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  text-align: right;
+  direction: rtl;
+  min-width: 0;
+}
+.dbs-search-input::placeholder {
+  color: #869fb8;
+}
+
+.dbs-snackbar-outline:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+.dbs-snackbar-primary:hover {
+  filter: brightness(1.12);
+}

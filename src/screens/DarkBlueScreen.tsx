@@ -25,16 +25,16 @@ import CreateNewFolderOutlinedIcon from '@mui/icons-material/CreateNewFolderOutl
 // ── Design tokens ─────────────────────────────────────────────────────────────
 
 const C = {
-  bg01: '#000000',
-  bg02: '#122438',
-  bg03: '#20364d',
-  bgSecondary: '#4272b8',
-  bgPrimary: '#5ea0ff',
-  bgPrimary02: '#4272b8',
-  fg01: '#ffffff',
-  fg03: '#869fb8',
-  border: '#869fb8',
-  shadow: '#101111',
+  bg01: '#e8f0f8',
+  bg02: '#f5f8fc',
+  bg03: '#dde8f2',
+  bgSecondary: '#1d4ed8',
+  bgPrimary: '#2563eb',
+  bgPrimary02: '#1d4ed8',
+  fg01: '#0d1f2d',
+  fg03: '#4a6580',
+  border: '#b8cedd',
+  shadow: 'rgba(0,0,0,0.15)',
 } as const;
 
 // Figma asset URLs — valid ~7 days from generation
@@ -133,7 +133,7 @@ function TopBar() {
           width: 280,
           padding: '0 12px',
           borderRadius: 1000,
-          background: 'rgba(0,0,0,0.38)',
+          background: 'rgba(0,0,0,0.04)',
           border: `1px solid ${C.border}`,
           boxSizing: 'border-box',
         }}
@@ -378,7 +378,7 @@ function VerticalSidePanel({
           bgStyle = { background: C.bgSecondary };
         } else if (tab.gradient) {
           bgStyle = {
-            backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.38) 0%, rgba(0,0,0,0.38) 100%), linear-gradient(90deg, ${C.bgSecondary} 0%, ${C.bgSecondary} 100%)`,
+            backgroundImage: `linear-gradient(90deg, rgba(255,255,255,0.38) 0%, rgba(255,255,255,0.38) 100%), linear-gradient(90deg, ${C.bgSecondary} 0%, ${C.bgSecondary} 100%)`,
           };
         } else {
           bgStyle = { background: tab.defaultBg };
@@ -584,7 +584,7 @@ function CreatePointSnackbar({ onClose }: { onClose: () => void }) {
             height: 32,
             minWidth: 80,
             padding: '4px 12px',
-            border: '1px solid #54779a',
+            border: `1px solid ${C.border}`,
             borderRadius: 4,
             background: 'transparent',
             color: C.fg01,
@@ -606,7 +606,7 @@ function CreatePointSnackbar({ onClose }: { onClose: () => void }) {
             border: 'none',
             borderRadius: 4,
             background: C.bgPrimary,
-            color: '#000000',
+            color: '#ffffff',
             fontSize: 14,
             fontWeight: 500,
             cursor: 'pointer',

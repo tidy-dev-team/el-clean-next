@@ -6,6 +6,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <h1>Main Screen</h1>
+      <p>Magic will happen here shortly</p>
       <CssBaseline />
     </ThemeProvider>
   );
